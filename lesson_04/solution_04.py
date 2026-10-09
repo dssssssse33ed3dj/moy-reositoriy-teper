@@ -4,6 +4,8 @@
 
     pytest lesson_04 -q
 
+    или python -m pytest -q
+
 Какой из изученных приёмов подходит, решаете сами и отмечаете в homework_04.md.
 """
 
@@ -19,8 +21,28 @@ def min_boats(weights, limit):
     Список weights не меняется. Время O(n log n).
     Пример: min_boats([3, 5, 3, 4], 5) == 4.
     """
-    raise NotImplementedError
-
+      
+    if not weights:
+        return 0
+        
+    sorted_weights = sorted(weights)
+    
+    left = 0
+    right = len(sorted_weights) - 1
+    boats = 0
+    
+    while left <= right:
+        if left == right:
+            boats += 1
+            break
+            
+        if sorted_weights[left] + sorted_weights[right] <= limit:
+            left += 1  
+            
+        right -= 1
+        boats += 1
+        
+    return boats
 
 def even_first(nums):
     """Задача 2. Сначала чётные (LeetCode 905).
@@ -31,4 +53,18 @@ def even_first(nums):
     Новые списки не создаются, дополнительная память O(1).
     Пример: [3, 1, 2, 4] → например, [2, 4, 3, 1] или [4, 2, 1, 3].
     """
-    raise NotImplementedError
+    left = 0
+    right = len(nums) - 1
+    
+    while left < right:
+        # Если слева уже чётное, просто идём дальше
+        if nums[left] % 2 == 0:
+            left += 1
+        # Если справа уже нечётное, просто сужаем границы
+        elif nums[right] % 2 != 0:
+            right -= 1
+        # Если слева нечётное, а справа чётное — меняем их местами
+        else:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+            right -= 1
