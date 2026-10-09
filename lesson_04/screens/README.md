@@ -1,5 +1,3 @@
 # Скриншоты задания 4
 
-| Файл | Что на кадре |
-|---|---|
-| `01-tests.png` | VS Code: открыт `solution_04.py`, в терминале вывод `pytest lesson_04 -q` с `22 passed` |
+- 01-tests.png <img width="2558" height="1438" alt="01-tests" src="https://github.com/user-attachments/assets/51e163bb-9ad7-409c-9786-fef70ddf0621" />
