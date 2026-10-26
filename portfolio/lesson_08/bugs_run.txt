@@ -1,0 +1,11 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.1, pytest-9.0.3, pluggy-1.6.0 -- C:\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\User51\Documents\GitHub\moy-reositoriy-teper\portfolio\lesson_08
+collecting ... collected 3 items
+
+tests_bugs_08.py::test_count_cheap_pairs_boundary PASSED                 [ 33%]
+tests_bugs_08.py::test_dedup_keep_two_boundary PASSED                    [ 66%]
+tests_bugs_08.py::test_is_mirror_boundary PASSED                         [100%]
+
+============================== 3 passed in 0.01s ==============================
