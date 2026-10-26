@@ -149,3 +149,14 @@ def test_remove_keeps_duplicates():
 
 # ---------- Мои тесты ----------
 # Сюда — тест, который воспроизводит найденную ошибку, и тесты по карточке изменения.
+
+def test_streak_at_the_very_end():
+    # воспроизводит ошибку черновика, когда серия на конце списка могла теряться
+    assert max_streak([12_000, 3_000, 11_000, 10_500, 10_000]) == 3
+
+
+def test_remove_spam_alternating():
+    # Дополнительный тест: спам чередуется через один элемент
+    comments = ["good1", "http://spam1.ru", "good2", "https://spam2.com"]
+    assert remove_spam(comments) == 2
+    assert comments == ["good1", "good2"]
