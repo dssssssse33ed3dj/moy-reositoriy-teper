@@ -1,0 +1,28 @@
+ДО ИСПРАВЛЕНИЯ
+============================= test session starts =============================
+platform win32 -- Python 3.13.1, pytest-9.0.3, pluggy-1.6.0
+rootdir: C:\Users\User51\Documents\GitHub\moy-reositoriy-teper\portfolio\lesson_13
+collected 3 items
+
+tests_bugs_13.py::test_is_pangram_ru_edge FAILED                         [ 33%]
+tests_bugs_13.py::test_top_letter_edge FAILED                            [ 66%]
+tests_bugs_13.py::test_all_unique_edge FAILED                            [100%]
+
+=============================================================================== short test summary info ===============================================================================
+FAILED tests_bugs_13.py::test_is_pangram_ru_edge - AssertionError: assert True is False
+FAILED tests_bugs_13.py::test_top_letter_edge - AssertionError: assert 'а' == 'б'
+FAILED tests_bugs_13.py::test_all_unique_edge - AssertionError: assert True is False
+================================================================================== 3 failed in 0.05s ==================================================================================
+
+
+ПОСЛЕ ИСПРАВЛЕНИЯ 
+============================= test session starts =============================
+platform win32 -- Python 3.13.1, pytest-9.0.3, pluggy-1.6.0
+rootdir: C:\Users\User51\Documents\GitHub\moy-reositoriy-teper\portfolio\lesson_13
+collected 3 items
+
+tests_bugs_13.py::test_is_pangram_ru_edge PASSED                         [ 33%]
+tests_bugs_13.py::test_top_letter_edge PASSED                            [ 66%]
+tests_bugs_13.py::test_all_unique_edge PASSED                            [100%]
+
+============================== 3 passed in 0.01s ==============================
