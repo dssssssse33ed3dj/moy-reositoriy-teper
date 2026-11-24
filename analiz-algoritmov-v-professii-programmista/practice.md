@@ -1,4 +1,5 @@
-Вывод запущенного кода:
+
+Вывод запущенного кода: <img width="1003" height="892" alt="Снимок экрана 2026-11-24 105442" src="https://github.com/user-attachments/assets/69aacdff-3e1d-4fc1-a770-cbf73dd550cc" />
 
 ## 01. Минимальное число
 
